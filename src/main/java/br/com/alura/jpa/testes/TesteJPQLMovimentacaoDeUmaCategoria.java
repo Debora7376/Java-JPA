@@ -12,7 +12,7 @@ import br.com.alura.jpa.modelo.Movimentacao;
 
 public class TesteJPQLMovimentacaoDeUmaCategoria {
 	public static void main(String[] args) {
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory("alura");
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("contas");
 		EntityManager em = emf.createEntityManager();
 
 		String sql = "select m from Movimentacao m join m.categorias c where c = :pCategoria";
